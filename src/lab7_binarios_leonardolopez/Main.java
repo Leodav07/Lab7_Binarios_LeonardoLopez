@@ -4,17 +4,16 @@
  */
 package lab7_binarios_leonardolopez;
 
+import lab7_binarios_leonardolopez.Screen.ReproductoMusica;
+
 /**
  *
  * @author hnleo
  */
-public class Lab7_Binarios_LeonardoLopez {
+public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+    new ReproductoMusica().setVisible(true);
     }
     
 }
