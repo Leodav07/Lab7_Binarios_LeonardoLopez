@@ -28,35 +28,30 @@ class DialogoAgregarCancion extends JDialog {
         gbc.insets = new Insets(5, 5, 5, 5);
         gbc.anchor = GridBagConstraints.WEST;
         
-        // Nombre
         gbc.gridx = 0; gbc.gridy = 0;
         panelCampos.add(new JLabel("Nombre:"), gbc);
         gbc.gridx = 1; gbc.fill = GridBagConstraints.HORIZONTAL;
         txtNombre = new JTextField(nombreArchivo.replaceFirst("[.][^.]+$", ""), 20);
         panelCampos.add(txtNombre, gbc);
         
-        // Artista
         gbc.gridx = 0; gbc.gridy = 1; gbc.fill = GridBagConstraints.NONE;
         panelCampos.add(new JLabel("Artista:"), gbc);
         gbc.gridx = 1; gbc.fill = GridBagConstraints.HORIZONTAL;
         txtArtista = new JTextField("Artista Desconocido", 20);
         panelCampos.add(txtArtista, gbc);
         
-        // DuraciÃ³n
         gbc.gridx = 0; gbc.gridy = 2; gbc.fill = GridBagConstraints.NONE;
-        panelCampos.add(new JLabel("DuraciÃ³n:"), gbc);
+        panelCampos.add(new JLabel("Duracion:"), gbc);
         gbc.gridx = 1; gbc.fill = GridBagConstraints.HORIZONTAL;
         txtDuracion = new JTextField("00:00", 20);
         panelCampos.add(txtDuracion, gbc);
         
-        // GÃ©nero
         gbc.gridx = 0; gbc.gridy = 3; gbc.fill = GridBagConstraints.NONE;
-        panelCampos.add(new JLabel("GÃ©nero:"), gbc);
+        panelCampos.add(new JLabel("Genero:"), gbc);
         gbc.gridx = 1; gbc.fill = GridBagConstraints.HORIZONTAL;
         txtGenero = new JTextField("Sin clasificar", 20);
         panelCampos.add(txtGenero, gbc);
         
-        // Botones
         JPanel panelBotones = new JPanel(new FlowLayout());
         JButton btnOK = new JButton("Agregar");
         JButton btnCancelar = new JButton("Cancelar");
